@@ -1,10 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const Food = ({name, image}) => {
+const Food = ({food}) => {
+    const {name, img, mealType, mealId} = food
+    const navigate = useNavigate()
+    const handleNavigate = ()=>{
+        navigate(`/${mealType}/${mealId}`)
+    }
     return (
-        <div className='w-[350px] lg:w-full mx-auto flex flex-col items-center justify-center duration-200 hover:shadow-lg hover:border-2 py-6 rounded-md cursor-pointer'>
+        <div onClick={handleNavigate} className='w-[350px] lg:w-full mx-auto flex flex-col items-center justify-center duration-200 hover:shadow-lg hover:border-2 py-6 rounded-md cursor-pointer'>
             <div className='w-[200px] h-[200px]'>
-            <img className='w-full' src={image} alt="" />
+            <img className='w-full' src={img} alt="" />
             </div>
             <div>
                 <h4>{name}</h4>
