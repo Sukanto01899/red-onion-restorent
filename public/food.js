@@ -57,8 +57,7 @@ export const dinner = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/dinner/dinner1.png'
-        ,
+        img: 'https://i.ibb.co/qMwzHtG/dinner1.png',
         mealType: 'dinner',
         mealId: 201
     },
@@ -66,7 +65,7 @@ export const dinner = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/dinner/dinner2.png',
+        img: 'https://i.ibb.co/jbd3GbY/dinner2.png',
         mealType: 'dinner',
         mealId: 202
     },
@@ -74,8 +73,7 @@ export const dinner = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/dinner/dinner3.png'
-        ,
+        img: 'https://i.ibb.co/gwYGBFm/dinner3.png',
         mealType: 'dinner',
         mealId: 203
     },
@@ -83,8 +81,7 @@ export const dinner = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/dinner/dinner4.png'
-        ,
+        img: 'https://i.ibb.co/s5GBYkL/dinner4.png',
         mealType: 'dinner',
         mealId: 204
     },
@@ -92,8 +89,7 @@ export const dinner = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/dinner/dinner5.png'
-        ,
+        img: 'https://i.ibb.co/FxPqGG0/dinner5.png',
         mealType: 'dinner',
         mealId: 205
     },
@@ -101,8 +97,7 @@ export const dinner = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/dinner/dinner6.png'
-        ,
+        img: 'https://i.ibb.co/NS2xFBL/dinner6.png',
         mealType: 'dinner',
         mealId: 206
     }
@@ -113,8 +108,7 @@ export const lunch = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/lunch/lunch1.png'
-        ,
+        img: 'https://i.ibb.co/68MMX0x/lunch1.png',
         mealType: 'lunch',
         mealId: 301
     },
@@ -122,7 +116,7 @@ export const lunch = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/lunch/lunch2.png'
+        img: 'https://i.ibb.co/MnMgGPF/lunch2.png'
         ,
         mealType: 'lunch',
         mealId: 302
@@ -131,7 +125,7 @@ export const lunch = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/lunch/lunch3.png'
+        img: 'https://i.ibb.co/Hht6JR1/lunch3.png'
         ,
         mealType: 'lunch',
         mealId: 303
@@ -140,7 +134,7 @@ export const lunch = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/lunch/lunch4.png'
+        img: 'https://i.ibb.co/mBGL0kZ/lunch4.png'
         ,
         mealType: 'lunch',
         mealId: 304
@@ -149,7 +143,7 @@ export const lunch = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/lunch/lunch5.png'
+        img: 'https://i.ibb.co/SnT7kRY/lunch5.png'
         ,
         mealType: 'lunch',
         mealId: 305
@@ -158,7 +152,7 @@ export const lunch = [
         name: 'Healthy Meal Plan',
         title: 'How we dream about our future',
         price: 23.39,
-        img: './images/lunch/lunch6.png'
+        img: 'https://i.ibb.co/cLLS69w/lunch6.png'
         ,
         mealType: 'lunch',
         mealId: 306

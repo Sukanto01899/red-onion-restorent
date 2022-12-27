@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { breakfast, dinner, lunch } from '../../../public/food';
+import useCart from '../../Hooks/useCart';
+import {setFoodCart} from '../../fackData.js'
 
 const MealDetails = () => {
     const [foodTime, setFoodTime] = useState([])
     const [food, setFood] = useState({})
-    const {mealTime, mealName} = useParams()
+    const {mealTime, mealName} = useParams();
+    const [carts, setCarts] = useCart()
     useEffect(()=>{
         if(mealTime === 'breakfast'){
             setFoodTime(breakfast)
@@ -20,6 +23,12 @@ const MealDetails = () => {
             setFood(getFood)
         }
     }, [foodTime])
+
+    const handleCart = ()=>{
+        const newCart = [...carts, food]
+        setCarts(newCart)
+        setFoodCart(food.mealId)
+    }
     
     return (
         <div className='100% md:w-[90%] lg:w-[60%] mt-6 mx-auto'>
@@ -33,7 +42,7 @@ const MealDetails = () => {
                         <input className='w-20 h-8 text-center outline-none' type="text" value={'1'}/>
                         <div className='px-3 py-1 text-lg cursor-pointer text-red-600 font-semibold'>-</div>
                     </div>
-                    <button className='bg-[red] text-white px-8 py-2 rounded-2xl'>Add</button>
+                    <button onClick={handleCart} className='bg-[red] text-white px-8 py-2 rounded-2xl'>Add</button>
                 </div>
                 <div className='w-[500px] h-[500px]'><img className='w-full' src={food.img} alt="" /></div>
             </div>
