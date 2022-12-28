@@ -1,4 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import Navigation from './components/Navigation'
 import Cartpage from './pages/Cart/Cartpage'
@@ -19,6 +21,7 @@ function App() {
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/cart' element={<Cartpage/>}></Route>
       </Routes>
+      <ToastContainer autoClose={2000}/>
     </>
   )
 }

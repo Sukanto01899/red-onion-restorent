@@ -1,16 +1,21 @@
 import { useEffect, useState } from 'react';
+import { breakfast } from '../../public/food';
 import { getFoodCart } from '../fackData';
 
 const useCart = () => {
-    const foodCart = getFoodCart()
     const [carts, setCarts] = useState([])
 
     useEffect(()=>{
+        const foodCart = getFoodCart()
         const allCart = [];
         for(let mealId in foodCart){
-            const getFood = carts.filter(cart => cart.mealId = mealId)
-            console.log(getFood)
+            const getFood = breakfast.find(food => food.mealId === +mealId  )
+            if(getFood){
+                getFood['quantity'] = foodCart[mealId]
+                allCart.push(getFood)
+            }
         }
+        setCarts(allCart)
     }, [])
     
     return [carts, setCarts]

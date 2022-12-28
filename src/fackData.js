@@ -1,5 +1,4 @@
 export const setFoodCart = (id)=>{
-    console.log(';ok')
     const foodCart = getFoodCart();
     if(foodCart[id]){
         foodCart[id] += 1;
